@@ -36,10 +36,18 @@ const GraphDisplayModal = ({
             Number(data[0]) + Number(data[0]) + 3
           ),
         backgroundColor:
-          data && data.map((data, id) => `#${id + 2}${id}${id + 3}`),
+          data &&
+          data.map(
+            (data, id) =>
+              `#${id < 4 ? id + 1 : "c"}${id < 4 ? id + 6 : "c"}${
+                id < 10 ? id + 1 : "c"
+              }${id < 10 ? id + 5 : "c"}${id < 4 ? id + 2 : "c"}${
+                id < 10 ? id + 5 : "c"
+              }`
+          ),
         borderColor: "crimson",
-        borderWidth: 3,
-        borderRadius: 2,
+        borderWidth: 1,
+        borderRadius: 5,
       },
     ],
   };
