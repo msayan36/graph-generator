@@ -81,7 +81,8 @@ const Home = () => {
             rel="noreferrer"
           >
             Sayan Munshi
-          </a>
+          </a>{" "}
+          , <a href="/">Sohaib Alam</a> and <a href="/">Soujanya Adhikary</a>
         </h4>
       </footer>
     </div>

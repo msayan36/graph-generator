@@ -39,13 +39,11 @@ const GraphDisplayModal = ({
           data &&
           data.map(
             (data, id) =>
-              `#${id < 4 ? id + 1 : "c"}${id < 4 ? id + 6 : "c"}${
-                id < 10 ? id + 1 : "c"
-              }${id < 10 ? id + 5 : "c"}${id < 4 ? id + 2 : "c"}${
-                id < 10 ? id + 5 : "c"
-              }`
+              `#33${id < 10 ? id + 2 : "c"}${id < 10 ? id + 5 : "c"}${
+                id < 4 ? id + 3 : "c"
+              }${id < 10 ? id + 6 : "c"}`
           ),
-        borderColor: "crimson",
+        borderColor: "#4aed88",
         borderWidth: 1,
         borderRadius: 5,
       },
